@@ -29,7 +29,6 @@ def resultado():
             resultado = "Negado"
             return render_template("resultado.html", resultado = resultado)
    
-
-
+   
 #colocando o site para rodar
 app.run(debug=True)
