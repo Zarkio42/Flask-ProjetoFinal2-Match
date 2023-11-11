@@ -18,18 +18,22 @@ def resultado():
     valor = int(request.args.get("valor"))
     t = int(request.args.get("tempo"))
     i = 1.5097
-    if renda < 1320:
-        resultado = "Negado"
-        return render_template("resultado.html", resultado = resultado)
-    else:
+
+    print("Renda:", renda)
+    print("Valor:", valor)
+    print("Tempo:", t)
+
+    if renda > 1320:
         M = valor*(1+i)**t
-        if (M/t*12) < (0.20 * renda):
+        if ((M/t*12) < (0.20 * renda)):
             resultado = "Aprovado"
             return render_template("resultado.html", resultado = resultado)
         else:
             resultado = "Negado"
             return render_template("resultado.html", resultado = resultado)
-   
+    else:
+            resultado = "Negado"
+            return render_template("resultado.html", resultado = resultado)
 
 #colocando o site para rodar
 if __name__ == '__main__':
