@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from flask.globals import request
+import os
 
 
 #criando site
@@ -29,6 +30,7 @@ def resultado():
             resultado = "Negado"
             return render_template("resultado.html", resultado = resultado)
    
-   
+
 #colocando o site para rodar
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True, port=os.getenv("PORT", default=5000))
