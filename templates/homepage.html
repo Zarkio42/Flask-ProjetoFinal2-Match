@@ -28,12 +28,18 @@
             margin-left: 20px;
             margin-right: 5px;
             border-radius: 5px;
-            color: aliceblue;
+            color: #fff;
+            background-color: #0206ab;
+            padding: 0 0 0 5px;
         }
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
         -webkit-appearance: none;
         margin: 0;
+        }
+
+        input:focus-visible{
+            outline: unset !important;
         }
 
         .final{
@@ -68,10 +74,19 @@
             border-radius: 5px;
             background-color: aliceblue;
             color: black;
+            outline: none;
         }
 
         form{
             margin: 30px;
+        }
+        .creditos{
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            font-size: 14pt;
+            margin-top: 140px;
         }
 
     </style>
@@ -86,5 +101,8 @@
             <button>Calcular</button>       
         </section>
     </form>
+    <div class="creditos">
+        <span>By: Thaisa Soares, Pedro Cardoso e Januário Pereira</span>
+    </div>
 </body>
 </html>

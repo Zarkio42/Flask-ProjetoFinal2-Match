@@ -47,20 +47,25 @@
         font-size: 25px;
         padding: 10px 0 10px 0;
       }
+      fieldset{
+        border-radius: 10px;
+      }
     </style>
   </head>
   <body>
     <h1>Calculadora para Empréstimos</h1>
     <h2>Resultado</h2>
     <div class="resultado"><p>{{resultado}}</p></div>
-    <div class="info-list">
-        <div class="list">
-            <p>Para que seu crédito seja aprovado você deve respeitar os requisitos a seguir:</p>
-            <ul>
-                <li>Sua renda mensal deve ser de, no mínimo, R$1320.</li>
-                <li>O valor das parcelas não pode ultrapassar 20% do valor de sua renda mensal.</li>
-            </ul>
+    <fieldset>
+        <div class="info-list">
+            <div class="list">
+                <p>Para que seu crédito seja aprovado você deve respeitar os requisitos a seguir:</p>
+                <ul>
+                    <li>Sua renda mensal deve ser de, no mínimo, R$1320.</li>
+                    <li>O valor das parcelas não pode ultrapassar 20% do valor de sua renda mensal.</li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </fieldset>
   </body>
 </html>
