@@ -10,7 +10,7 @@ app = Flask(__name__)
 def homepage():
     return (render_template("homepage.html"))
 
-#criando o calculo e utilizando método get e post para mostrar resultados   
+#criando o calculo e utilizando método get para mostrar resultados   
 @app.route("/resultado", methods= ['GET'])
 def resultado():
     renda = int(request.args.get("renda"))
